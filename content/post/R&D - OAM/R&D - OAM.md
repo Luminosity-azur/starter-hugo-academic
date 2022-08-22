@@ -1,17 +1,28 @@
 ---
 title: R&D - OAM
-tags: 
-- R&D
-- OAM
+subtitle: 本文为对无线轨道角动量复用原理相关研究的整理。
 
-categories: 
-- [R&D]
+# Summary for listings and search engines
+summary: 本文为对无线轨道角动量复用原理相关研究的整理。
 
-date: 2021-7-16
+# Link this post with a project
+projects: []
+
+# Date published
+date: '2021-7-16T'
+
+authors:
+  - admin
+
+tags:
+  - R&D
+  - OAM
+
+categories:
+  - R&D
+
 math: true
 ---
-
-本文为对无线轨道角动量复用原理相关研究的整理。
 
 ## 研究背景
 随着第一代移动通信网络到第五代移动通信网络的发展，为了应对容量需求的增长，业界分别提出了基于时间、频率、码字和空间等正交资源的复用通信技术。随着通信技术的进一步发展，在未来的第六代移动通信系统中将会面临更高的容量需求，是否存在新的自由度资源？答案是有的，近年来，基于轨道角动量的模态资源被认为是一种全新的空间自由度。本文聚焦轨道角动量无线通信，研究其模式复用的问题。
