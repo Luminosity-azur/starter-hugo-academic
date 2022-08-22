@@ -1,13 +1,35 @@
 ---
 title: R&D - IRS
-tags: 
-- R&D
-- IRS
+subtitle: 本文为IRS基础内容梳理。
 
-categories: 
-- [R&D]
+# Summary for listings and search engines
+summary: 本文为IRS基础内容梳理。
 
-date: 2021-7-23
+# Link this post with a project
+projects: []
+
+# Date published
+date: '2021-7-23T00:00:00Z'
+
+# Date updated
+lastmod: '2021-7-23T00:00:00Z'
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+authors:
+  - R&D
+  - IRS
+
+tags:
+  - Academic
+  - 开源
+
+categories:
+  - R&D
 math: true
 ---
 
