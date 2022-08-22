@@ -1,16 +1,36 @@
 ---
 title: R&D - 科研入门
+subtitle: 本文是对科研训练入门相关内容的整理。
+
+# Summary for listings and search engines
+summary: 本文是对科研训练入门相关内容的整理。
+
+# Link this post with a project
+projects: []
+
+# Date published
+date: '2021-7-10'
+
+# Date updated
+lastmod: '2021-7-10'
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+authors:
+  - admin
+
 tags: 
-- R&D
+  - R&D
 
 categories: 
-- [R&D]
+  - R&D
 
-date: 2021-7-10
 math: true
 ---
-
-本文是对科研训练入门相关内容的整理。
 
 
 ## 什么是科研
