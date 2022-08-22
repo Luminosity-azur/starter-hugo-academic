@@ -6,14 +6,14 @@ title: Yitao Li
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Undergraduates majoring in communications engineering
 
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Chongqing University of Posts and telecommunications (CQUPT)
-    url: https://www.stanford.edu/
-  - name: Brunel University London
-    url: https://www.stanford.edu/
+    url: https://www.cqupt.edu.cn/
+#  - name: Brunel University London
+#    url: https://www.brunel.ac.uk/
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include millimeter wave channel modeling, WSN nodes positioning and swarm intelligence algorithm.
@@ -28,12 +28,12 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: BEng in Electronic and Communications Engineering
-      institution: Brunel University London
-      year: 2019 - 2023
+#    - course: BEng in Electronic and Communications Engineering
+#      institution: Brunel University London
+#      year: 2019-2023
     - course: BEng in Telecommunications Engineering
       institution: Chongqing University of Posts and Telecommunications (CQUPT)
-      year: 2019 - 2023
+      year: 2019-2023
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -42,7 +42,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'cqliyitao@163.com'
+    mailto: cqliyitao@163.com
 #  - icon: twitter
 #    icon_pack: fab
 #    link: https://twitter.com/GeorgeCushen
@@ -70,8 +70,8 @@ email: ''
 highlight_name: true
 ---
 
-Yitao Li is a member of the radio wave propagation and access technology team of the mobile communication Key Laboratory of Chongqing University of Posts and telecommunications. He participated in channel sounding and data processing of indoor millimeter-wave communication, which was funded by European Council H2020 and National Key R&D Project of China. In recent days, his research is being carried out on the algorithms related to the location of WSN nodes in the Internet of things.
+Yitao Li is a member of the radio wave propagation and access technology team of the mobile communication Key Laboratory of Chongqing University of Posts and telecommunications. He participated in channel sounding and data processing of indoor millimeter-wave communication, which was funded by European Council H2020 and National Key R&D Project of China. Recently, he is studying algorithms related to the node location of wireless sensor networks in the Internet of things and applying them to build a life information network.
 
-In addition, he served as the student representative for CQUPT and Brunel, providing advice on teaching activities.
+<!-- In addition, he served as the student representative for CQUPT and Brunel, providing advice on teaching activities. -->
 
-# {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
