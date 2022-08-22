@@ -1,18 +1,38 @@
 ---
-title: R&D - WSN节点定位
+title: R&D - WSN nodes location
+subtitle: This is a brief summary of my research on WSN node location algorithms.
+
+# Summary for listings and search engines
+summary: This is a brief summary of my research on WSN node location algorithms.
+
+# Link this post with a project
+projects: []
+
+# Date published
+date: '2022-7-30'
+
+# Date updated
+lastmod: '2022-7-30'
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+authors:
+  - admin
+
 tags: 
-- R&D
-- IoT
-- WSN节点定位
+  - R&D
+  - IoT
+  - WSN nodes location
 
 categories: 
-- [R&D]
+  - R&D
 
-date: 2022-7-30
 math: true
 ---
-
-This is a brief summary of my research on WSN node location algorithms.
 
 ## Introduction
 - In the 5G network architecture, IoT will interconnect devices with various potentials during the identical heterogeneous network
