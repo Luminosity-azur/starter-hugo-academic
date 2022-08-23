@@ -9,10 +9,10 @@ summary: 本文为对无线轨道角动量复用原理相关研究的整理。
 projects: []
 
 # Date published
-date: '2021-7-16T00:00:00Z'
+date: '2021-07-16T00:00:00Z'
 
 # Date updated
-lastmod: '2021-7-16T00:00:00Z'
+lastmod: '2021-07-16T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false

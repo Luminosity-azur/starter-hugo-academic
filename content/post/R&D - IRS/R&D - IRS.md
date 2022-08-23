@@ -9,10 +9,10 @@ summary: 本文为IRS基础内容梳理。
 projects: []
 
 # Date published
-date: '2021-7-23T00:00:00Z'
+date: '2021-07-23T00:00:00Z'
 
 # Date updated
-lastmod: '2021-7-23T00:00:00Z'
+lastmod: '2021-07-23T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false
