@@ -51,7 +51,7 @@ social:
   #   icon_pack: fas
   #   link: https://liyitao.cn
   - icon: browser
-    icon_pack: fas
+    icon_pack: fab
     link: https://liyitao.cn
   - icon: github
     icon_pack: fab
