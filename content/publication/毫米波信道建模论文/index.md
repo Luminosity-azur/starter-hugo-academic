@@ -64,7 +64,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - 室内毫米波信道建模实测研究
+  - 'content/project/R&D - 室内毫米波信道建模实测研究/R&D - 室内毫米波信道建模实测研究.md'
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

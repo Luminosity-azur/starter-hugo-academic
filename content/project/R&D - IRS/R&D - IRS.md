@@ -30,7 +30,7 @@ math: true
 
 image:
   caption: ''
-  focal_point: Smart
+  focal_point: ''
 ---
 
 本文为IRS基础内容梳理。

@@ -25,8 +25,8 @@ doi: ''
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2022 IEEE 4th International Conference on Power, Intelligent Computing and Systems*
-publication_short: In *ICPICS 2022*
+publication: In *2022 IEEE 4th International Conference on Power, Intelligent Computing and Systems (ICPICS 2022)*
+# publication_short: In *ICPICS 2022*
 
 abstract: Location-based service (LBS) is one of the most potential applications in the Internet of Things (IoT) and providing reliable node location information has become an important indicator to measure the technical standards of the IoT. However, node location in wireless sensor network (WSN) is a non-convex optimization problem, as well as the dynamic and large amount of data in the IoT, traditional node location algorithms have encountered severe challenges in solving such problems. In this paper, an improved particle swarm optimization (PSO) algorithm based on simulated annealing (SA) algorithm (SA-PSO) was proposed to locate nodes in the IoT. Using the probabilistic search characteristics of the SA algorithm in the "optimization" and "deterioration" directions, the particle iteration of the PSO is optimized and adjusted to avoid the "premature convergence" phenomenon that the PSO algorithm is prone to. At the same time, an adaptive inertia weight is introduced for dynamic calculation, thereby effectively improving the coverage of node location. Experimental results show that, compared with the traditional PSO algorithm, the algorithm proposed in this paper can effectively improve the coverage rate and solving speed of node location, and has more accurate location results in large-scale WSN location.
 
@@ -65,7 +65,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - WSN nodes location
+  - 'content/project/R&D - WSN nodes location/R&D - WSN节点定位.md'
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
