@@ -47,11 +47,8 @@ social:
 #  - icon: twitter
 #    icon_pack: fab
 #    link: https://twitter.com/GeorgeCushen
-  # - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-  #   icon_pack: fas
-  #   link: https://liyitao.cn
-  - icon: browser
-    icon_pack: fab
+  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+    icon_pack: fas
     link: https://liyitao.cn
   - icon: github
     icon_pack: fab

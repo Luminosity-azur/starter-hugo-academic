@@ -6,9 +6,9 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
-  theme_night: minimal
-  font: minimal
+  theme_day: cyberpunk
+  theme_night: cyberpunk
+  font: cyberpunk
   font_size: L
 
 # SEO
@@ -18,7 +18,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
+    description: 'Yitao Li's Academic Homepage'
     twitter: ''
   analytics:
     google_analytics: ''
