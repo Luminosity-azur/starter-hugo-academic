@@ -1,6 +1,5 @@
 ---
 title: IRS
-subtitle: 本文为IRS基础内容梳理。
 
 # Summary for listings and search engines
 summary: 本文为IRS基础内容梳理。
