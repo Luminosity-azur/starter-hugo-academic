@@ -75,4 +75,4 @@ Yitao Li is a member of the radio wave propagation and access technology team of
 
 <!-- In addition, he served as the student representative for CQUPT and Brunel, providing advice on teaching activities. -->
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+<!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
