@@ -27,6 +27,10 @@ tags:
   - IoT
 
 math: true
+
+image:
+  caption: ''
+  focal_point: Smart
 ---
 
 ## Introduction
