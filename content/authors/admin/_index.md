@@ -6,7 +6,7 @@ title: Yitao Li
 superuser: true
 
 # Role/position/tagline
-role: Undergraduates majoring in communications engineering
+role: Undergraduates
 
 # Organizations/Affiliations to show in About widget
 organizations:
