@@ -30,7 +30,7 @@ tags:
 math: true
 
 image:
-  caption: ''
+  caption: Photo by rawpixel on Unsplash
   focal_point: Smart
 ---
 
