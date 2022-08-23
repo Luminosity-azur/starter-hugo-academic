@@ -65,7 +65,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - 'content/project/R&D - WSN nodes location/R&D - WSN节点定位.md'
+  - 'content\project\R&D - WSN nodes location\index.md'
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

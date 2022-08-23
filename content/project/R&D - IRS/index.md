@@ -27,9 +27,6 @@ tags:
 
 math: true
 
-image:
-  caption: ''
-  focal_point: Smart
 ---
 
 本文为IRS基础内容梳理。
