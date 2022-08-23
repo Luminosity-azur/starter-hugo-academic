@@ -9,10 +9,10 @@ summary: 本文是对科研训练入门相关内容的整理。
 projects: []
 
 # Date published
-date: 2021-8-22
+date: '2021-08-22T00:00:00Z'
 
 # Date updated
-lastmod: 2021-8-22
+lastmod: '2021-08-22T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false
