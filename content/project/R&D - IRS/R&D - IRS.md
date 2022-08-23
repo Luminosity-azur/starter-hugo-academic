@@ -28,8 +28,8 @@ tags:
 math: true
 
 image:
-  - caption: Photo by rawpixel on Unsplash
-  - focal_point: Smart
+  caption: Photo by rawpixel on Unsplash
+  focal_point: Smart
 ---
 
 本文为IRS基础内容梳理。
