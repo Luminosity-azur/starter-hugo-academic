@@ -28,7 +28,7 @@ tags:
 math: true
 
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption: ''
   focal_point: Smart
 ---
 

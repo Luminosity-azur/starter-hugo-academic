@@ -30,9 +30,8 @@ tags:
 math: true
 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
-  preview_only: false
+  focal_point: Smart
+
 ---
 
 本文是对近两个月信道建模测量相关科研经历的回顾及总结。
