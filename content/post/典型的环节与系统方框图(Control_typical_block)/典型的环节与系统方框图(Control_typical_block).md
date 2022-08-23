@@ -1,27 +1,24 @@
 ---
 title: 典型的环节与系统方框图(Control_typical_block)
-subtitle: 本文是对控制系统基础内容的表述。
+subtitle: 本文是对自动控制原理基础内容的表述。
 
 # Summary for listings and search engines
-summary: 本文是对控制系统基础内容的表述。
+summary: 本文是对自动控制原理基础内容的表述。
 
 tags: 
 - 控制系统
 - 自动控制原理
 
 categories: 
-- [自动控制原理]
+- 自动控制原理
 
 # Date published
-date: '2021-07-23T00:00:00Z'
+date: '2022-03-21'
 
 # Date updated
-lastmod: '2021-07-23T00:00:00Z'
-
+lastmod: '2022-03-21'
 math: true
 ---
-
-# 典型的环节与系统方框图(Control_typical_block)
 
 ## 1 典型环节
 所谓环节就是具有相同形式传递函数的原部件的分类。这些传递函数是控制系统最经典最典型的。

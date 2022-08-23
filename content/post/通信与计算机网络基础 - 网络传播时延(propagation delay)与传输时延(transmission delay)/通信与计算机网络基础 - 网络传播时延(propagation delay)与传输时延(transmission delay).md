@@ -1,11 +1,16 @@
 ---
 title: 通信与计算机网络基础 - 网络传播时延(propagation delay)与传输时延(transmission delay)
+subtitle: 本文是对“传输时延”与“传播时延”概念的辨析。
+
+# Summary for listings and search engines
+summary: 本文是对“传输时延”与“传播时延”概念的辨析。
+
 tags: 
-- 通信与计算机网络基础
+- 通信与计算机网络
 
 categories: 
-- [通信与计算机网络基础]
-date: 2022-4-21
+- 通信与计算机网络
+date: '2022-04-21'
 math: true
 ---
 # 传播时延(propagation delay)

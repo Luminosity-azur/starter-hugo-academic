@@ -9,7 +9,7 @@ tags:
 - 机器学习
 
 categories: 
-- [机器学习]
+- 机器学习
 date: '2022-08-13'
 
 math: true

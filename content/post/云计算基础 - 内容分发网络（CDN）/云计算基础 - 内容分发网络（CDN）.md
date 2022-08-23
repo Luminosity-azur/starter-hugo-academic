@@ -1,11 +1,16 @@
 ---
 title: 云计算基础 - 内容分发网络（CDN）
+subtitle: 本文是对CDN相关内容的阐释。
+
+# Summary for listings and search engines
+summary: 本文是对CDN相关内容的阐释。
+
 tags: 
-- 云计算基础
+- 云计算
 
 categories: 
-- [云计算]
-date: 2022-7-06
+- 云计算
+date: '2022-07-06'
 math: true
 ---
 ### 一、CND概述

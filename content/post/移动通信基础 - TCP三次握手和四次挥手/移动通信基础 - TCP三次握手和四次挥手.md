@@ -1,11 +1,16 @@
 ---
 title: 移动通信基础 - TCP三次握手和四次挥手
+subtitle: 本文是对TCP三次握手和四次挥手相关内容的阐释。
+
+# Summary for listings and search engines
+summary: 本文是对TCP三次握手和四次挥手相关内容的阐释。
+
 tags: 
-- 移动通信基础
+- 移动通信
 
 categories: 
-- [移动通信基础]
-date: 2022-4-17
+- 移动通信
+date: '2022-04-17'
 math: true
 ---
 

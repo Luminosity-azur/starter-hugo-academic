@@ -1,11 +1,16 @@
 ---
 title: 云计算基础 - 总拥有成本（TCO）
+subtitle: 本文是对TCO相关内容的阐释。
+
+# Summary for listings and search engines
+summary: 本文是对TCO相关内容的阐释。
+
 tags: 
-- 云计算基础
+- 云计算
 
 categories: 
-- [云计算]
-date: 2022-7-10
+- 云计算
+date: '2022-07-10'
 math: true
 ---
 ### 一、概述

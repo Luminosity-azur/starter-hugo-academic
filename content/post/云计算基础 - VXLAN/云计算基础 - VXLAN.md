@@ -1,11 +1,16 @@
 ---
 title: 云计算基础 - VXLAN
+subtitle: 本文是对VXLAN相关内容的阐释。
+
+# Summary for listings and search engines
+summary: 本文是对VXLAN相关内容的阐释。
+
 tags: 
-- 云计算基础
+- 云计算
 
 categories: 
-- [云计算]
-date: 2022-6-12
+- 云计算
+date: '2022-06-12'
 math: true
 ---
 ### VXLAN概述及产生原因

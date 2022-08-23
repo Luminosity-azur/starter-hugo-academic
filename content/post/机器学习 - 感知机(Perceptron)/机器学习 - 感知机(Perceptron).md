@@ -10,7 +10,7 @@ tags:
 - 统计学习
 
 categories: 
-- [机器学习]
+- 机器学习
 
 # Date published
 date: '2022-03-07'

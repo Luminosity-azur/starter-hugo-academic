@@ -1,12 +1,17 @@
 ---
 title: 云计算基础 - 非一致性内存访问（NUMA）
+subtitle: 本文是对NUMA相关内容的阐释。
+
+# Summary for listings and search engines
+summary: 本文是对NUMA相关内容的阐释。
+
 tags: 
-- 云计算基础
+- 云计算
 
 categories: 
-- [云计算]
+- 云计算
 
-date: 2022-6-04
+date: '2022-06-04'
 math: true
 ---
 ### 三种系统架构 & 两种存储器共享方式

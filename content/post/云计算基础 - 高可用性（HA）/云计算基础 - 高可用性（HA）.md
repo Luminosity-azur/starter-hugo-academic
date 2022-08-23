@@ -1,12 +1,17 @@
 ---
 title: 云计算基础 - 高可用性（HA）
+subtitle: 本文是对HA相关内容的阐释。
+
+# Summary for listings and search engines
+summary: 本文是对HA相关内容的阐释。
+
 tags: 
-- 云计算基础
+- 云计算
 
 categories: 
-- [云计算]
+- 云计算
 
-date: 2022-5-23
+date: '2022-05-23'
 math: true
 ---
 ### 什么是高可用性 (HA)
