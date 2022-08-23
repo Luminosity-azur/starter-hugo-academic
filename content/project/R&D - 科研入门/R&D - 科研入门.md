@@ -1,5 +1,5 @@
 ---
-title: R&D - 科研入门
+title: 科研入门
 subtitle: 本文是对科研训练入门相关内容的整理。
 
 # Summary for listings and search engines
@@ -24,10 +24,8 @@ authors:
   - admin
 
 tags: 
-  - R&D
+  - other
 
-categories: 
-  - R&D
 
 math: true
 ---

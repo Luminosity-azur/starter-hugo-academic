@@ -1,5 +1,5 @@
 ---
-title: R&D - OAM
+title: OAM
 subtitle: 本文为对无线轨道角动量复用原理相关研究的整理。
 
 # Summary for listings and search engines
@@ -24,11 +24,8 @@ authors:
   - admin
 
 tags:
-  - R&D
-  - OAM
+  - Millimeter wave communication
 
-categories:
-  - R&D
 
 math: true
 ---

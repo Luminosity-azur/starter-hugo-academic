@@ -1,5 +1,5 @@
 ---
-title: R&D - IRS
+title: IRS
 subtitle: 本文为IRS基础内容梳理。
 
 # Summary for listings and search engines
@@ -24,11 +24,7 @@ authors:
   - admin
 
 tags:
-  - R&D
-  - IRS
-
-categories:
-  - R&D
+  - Millimeter wave communication
 
 math: true
 ---

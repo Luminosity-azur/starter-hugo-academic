@@ -1,5 +1,5 @@
 ---
-title: R&D - 室内毫米波信道建模实测研究
+title: 室内毫米波信道建模实测研究
 subtitle: 本文是对科研训练入门相关内容的整理。
 
 # Summary for listings and search engines
@@ -24,12 +24,8 @@ authors:
   - admin
 
 tags: 
-  - R&D
-  - 毫米波通信
-  - 信道建模
+  - Millimeter wave communication
 
-categories: 
-  - R&D
 
 math: true
 ---

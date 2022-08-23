@@ -1,5 +1,5 @@
 ---
-title: R&D - WSN nodes location
+title: WSN nodes location
 subtitle: This is a brief summary of my research on WSN node location algorithms.
 
 # Summary for listings and search engines
@@ -24,12 +24,7 @@ authors:
   - admin
 
 tags: 
-  - R&D
   - IoT
-  - WSN nodes location
-
-categories: 
-  - R&D
 
 math: true
 ---
