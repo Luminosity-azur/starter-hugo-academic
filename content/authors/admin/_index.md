@@ -16,7 +16,8 @@ organizations:
 #    url: https://www.brunel.ac.uk/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include millimeter wave channel modeling, WSN nodes positioning and swarm intelligence algorithm.
+bio: Accelerate the the world's transition to the Internet of Everything.
+# My research interests include millimeter wave channel modeling, WSN nodes positioning and swarm intelligence algorithm.
 
 # Interests to show in About widget
 interests:
@@ -46,7 +47,10 @@ social:
 #  - icon: twitter
 #    icon_pack: fab
 #    link: https://twitter.com/GeorgeCushen
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+  # - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+  #   icon_pack: fas
+  #   link: https://liyitao.cn
+  - icon: browser
     icon_pack: fas
     link: https://liyitao.cn
   - icon: github
