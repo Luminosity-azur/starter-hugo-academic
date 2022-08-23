@@ -29,10 +29,12 @@ content:
       tag: '*'
     - name: Millimeter wave communication
       tag: Millimeter wave communication
-    - name: Deep Learning
-      tag: Deep Learning
+    - name: IoT
+      tag: IoT
     - name: Other
       tag: Other
+    # - name: Deep Learning
+    #   tag: Deep Learning
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.

@@ -24,7 +24,7 @@ authors:
   - admin
 
 tags: 
-  - other
+  - Other
 
 
 math: true
