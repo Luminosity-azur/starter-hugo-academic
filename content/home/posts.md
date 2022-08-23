@@ -33,6 +33,6 @@ content:
 
 design:
   # Choose a view for the listings:
-  view: card
+  view: Compact
   columns: '2'
 ---
