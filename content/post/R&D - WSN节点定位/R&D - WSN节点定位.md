@@ -9,10 +9,10 @@ summary: This is a brief summary of my research on WSN node location algorithms.
 projects: []
 
 # Date published
-date: '2022-7-30T00:00:00Z'
+date: '2022-07-30T00:00:00Z'
 
 # Date updated
-lastmod: '2022-7-30T00:00:00Z'
+lastmod: '2022-07-30T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false
