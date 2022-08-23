@@ -33,6 +33,7 @@ content:
 
 design:
   # Choose a view for the listings:
-  view: 3
+  view: Showcase
   columns: '2'
+  flip_alt_rows: true
 ---
