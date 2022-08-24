@@ -10,7 +10,7 @@ role: Undergraduates
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Chongqing University of Posts and telecommunications (CQUPT)
+  - name: Chongqing University of Posts and Telecommunications (CQUPT)
     url: https://www.cqupt.edu.cn/
 #  - name: Brunel University London
 #    url: https://www.brunel.ac.uk/
@@ -44,12 +44,18 @@ social:
   - icon: envelope
     icon_pack: fas
     link: mailto:cqliyitao@163.com
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+  - icon: blog
     icon_pack: fas
     link: https://liyitao.cn
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/Luminosity-azur
+  - icon: browser
+    icon_pack: fas
+    link: https://blog.csdn.net/weixin_45766278
+  # - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+  #   icon_pack: fas
+  #   link: https://liyitao.cn
+  # - icon: github
+  #   icon_pack: fab
+  #   link: https://github.com/Luminosity-azur
 #  - icon: twitter
 #    icon_pack: fab
 #    link: https://twitter.com/GeorgeCushen
