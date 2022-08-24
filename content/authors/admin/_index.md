@@ -44,7 +44,7 @@ social:
   - icon: envelope
     icon_pack: fas
     link: mailto:cqliyitao@163.com
-  - icon: books
+  - icon: book
     icon_pack: fas
     link: https://liyitao.cn
   - icon: notes
