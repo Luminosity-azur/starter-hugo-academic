@@ -1,9 +1,9 @@
 ---
 title: 室内毫米波信道建模实测研究
-subtitle: 本文是对近两个月信道建模测量相关科研经历的回顾及总结。
+subtitle: 本文是对近几个月信道建模测量相关科研经历的回顾及总结。
 
 # Summary for listings and search engines
-summary: 本文是对近两个月信道建模测量相关科研经历的回顾及总结。
+summary: 本文是对近几个月信道建模测量相关科研经历的回顾及总结。
 
 # Link this post with a project
 projects: []
