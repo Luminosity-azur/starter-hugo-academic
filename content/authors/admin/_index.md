@@ -47,7 +47,7 @@ social:
   - icon: book
     icon_pack: fas
     link: https://liyitao.cn
-  - icon: notes
+  - icon: note
     icon_pack: fas
     link: https://blog.csdn.net/weixin_45766278
   # - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
