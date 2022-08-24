@@ -44,12 +44,12 @@ social:
   - icon: envelope
     icon_pack: fas
     link: mailto:cqliyitao@163.com
-  - icon: book
-    icon_pack: fas
-    link: https://liyitao.cn
-  - icon: note
-    icon_pack: fas
-    link: https://blog.csdn.net/weixin_45766278
+  # - icon: blog
+  #   icon_pack: fas
+  #   link: https://liyitao.cn
+  # - icon: book
+  #   icon_pack: fas
+  #   link: https://blog.csdn.net/weixin_45766278
   # - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
   #   icon_pack: fas
   #   link: https://liyitao.cn
