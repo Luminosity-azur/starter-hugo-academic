@@ -12,8 +12,8 @@ role: Undergraduates
 organizations:
   - name: Chongqing University of Posts and Telecommunications (CQUPT)
     url: https://www.cqupt.edu.cn/
-  - name: Brunel University London
-    url: https://www.brunel.ac.uk/
+  # - name: Brunel University London
+  #   url: https://www.brunel.ac.uk/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Accelerate the the world's transition to the Internet of Everything.
@@ -29,12 +29,12 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: BEng in Electronic and Communications Engineering
-      institution: Brunel University London
-      year: 2019-2023
     - course: BEng in Telecommunications Engineering
       institution: Chongqing University of Posts and Telecommunications (CQUPT)
       year: 2019-2023
+    # - course: BEng in Electronic and Communications Engineering
+    #   institution: Brunel University London
+    #   year: 2019-2023
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -79,6 +79,6 @@ highlight_name: true
 
 Yitao Li is a member of the radio wave propagation and access technology team of the mobile communication Key Laboratory of Chongqing University of Posts and telecommunications. He participated in channel sounding and data processing of indoor millimeter-wave communication, which was funded by European Council H2020 and National Key R&D Project of China. Recently, he is studying algorithms related to the node location of wireless sensor networks in the Internet of things and applying them to build a life information network.
 
-In addition, he served as the student representative for CQUPT and Brunel, providing advice on teaching activities.
+<!-- In addition, he served as the student representative for CQUPT and Brunel, providing advice on teaching activities. -->
 
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->

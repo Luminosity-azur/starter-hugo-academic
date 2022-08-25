@@ -25,7 +25,7 @@ feature:
     icon_pack: fas
     name: Orchestral music
   - description:
-    icon: people-line
+    icon: microphone
     icon_pack: fas
     name: Debate
 # Uncomment to use emoji icons.
