@@ -21,12 +21,12 @@ feature:
     icon_pack: fas
     name: Photography
   - description:
-    icon: violin
+    icon: headphones
     icon_pack: fas
     name: Orchestral music
   - description:
     icon: people-line
-    icon_pack: fab
+    icon_pack: fas
     name: Debate
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
