@@ -1,16 +1,16 @@
 ---
-title: 典型的环节与系统方框图(Control_typical_block)
-subtitle: 本文是对自动控制原理基础内容的表述。
+title: Control_Typical_Block
+subtitle: This post describes the basic contents of automatic control theory.
 
 # Summary for listings and search engines
-summary: 本文是对自动控制原理基础内容的表述。
+summary: This post describes the basic contents of automatic control theory.
 
 tags: 
-- 控制系统
-- 自动控制原理
+- Control System
+- Automatic Control Theory
 
 categories: 
-- 自动控制原理
+- Automatic Control Theory
 
 # Date published
 date: '2022-03-21'
@@ -20,89 +20,88 @@ lastmod: '2022-03-21'
 math: true
 ---
 
-## 1 典型环节
-所谓环节就是具有相同形式传递函数的原部件的分类。这些传递函数是控制系统最经典最典型的。
+## 1 Typical Components
+The so-called component is the classification of original components with the same form transfer function. These transfer functions are the most classical and typical of control systems.
 
-### 1.1 比例环节
-传递函数
+### 1.1 Proportional Component
+Transfer function
 $$
 G(s) = K
 $$
 
-这个系统就是将输入乘以一个常数K输出，所以叫做比例环节。典型的比例环节部件就是电位计，根据电阻指针的位置有对应比例的输出。
+This system is to multiply the input by a constant K and then output, so it is called the proportional component. A typical proportional component is a potentiometer, which has a corresponding proportional output according to the position of the resistance pointer.
 
-### 1.2 微分环节
-传递函数
+### 1.2 Differential Component
+Transfer function
 $$
 G(s) = s
 $$
 
-不难发现，这就是Laplace变换微分定理，将输入乘以s，就是在时域微分。
+It is not difficult to find that this is the Laplace transform differential theorem. Multiplying the input by s is the differential in the time domain.
 
-### 1.3 积分环节
-传递函数
+### 1.3 Integral Component
+Transfer function
 $$
 G(s) = \frac{1}{s}
 $$
 
-这也是Laplace变换的积分定理，将输入除以s，就是在时域积分。
+This is also the integral theorem of Laplace transform. Dividing the input by s is the integral in the time domain.
 
-### 1.4 惯性环节
-传递函数
+### 1.4 Inertia Component
+Transfer function
 $$
 G(s) = \frac{1}{Ts+1}
 $$
 
-这个函数其实描述了一个缓慢消失的过程，我们把它的时域函数写出来。
+This function actually describes a process of slow disappearance. We write its time-domain function.
 $$
 h(t) = \frac{1}{T}e^{-\frac{t}{T}}
 $$
 
-随着时间增加，函数值按指数减少，就像是因为惯性而保持一段距离，最后消失，其中$T$就是**时间常数**，它决定了系统衰减的速度。
-### 1.5 震荡环节
-传递函数
+With the increase of time, the function value decreases exponentially, just like it keeps a distance due to inertia, and finally disappears. Where $T$ is the **time constant**, which determines the decay speed of the system.
+
+### 1.5 Sscillation Component
+Transfer function
 $$
 G(s) = \frac{1}{T^2s^2+2\xi Ts+1}
 $$
 
-函数描述的是一种震荡的状态，将在后面的二阶系统响应分析中详细介绍。
+The function describes a state of oscillation, which will be described in detail in the second-order system response analysis later.
 
-### 1.6 一阶复合微分环节
-传递函数
+### 1.6 First-order Composite Differential Component
+Transfer function
 $$
 \tau s+1
 $$
 
-暂不做介绍
 
-### 1.7 二阶复合微分环节
-传递函数
+### 1.7 Second-order Composite Differential Component
+Transfer function
 $$
 \tau^2s^2+2\xi \tau s+1
 $$
 
-暂不做介绍。
 
-### 1.8总结
-任何的传递函数都可以看作典型环节的组合，这些典型环节可以构成多种多样的系统。
+### 1.8 Summary
+Any transfer function can be regarded as a combination of typical components, which can form a variety of systems.
 
-## 2 负载效应问题
-现考虑两个电路连接在一起，第一级电路输入$u_r$，输出$u_a$，第二级电路输入$u_a$，输出$u_c$。但我们都知道，简单的耦合两个电路，第二级电路实际上会对第一级电路造成影响，这就叫做负载效应。对系统接入负载的时候，可能会导致系统不是简单的输入输出关系。
+## 2 Load Effect Problem
+Now consider that two circuits are connected together, and the first stage circuit inputs $u_r$, output $u_a$, second stage circuit input $u_a$, output $u_c$。 However, we all know that if two circuits are simply coupled, the second stage circuit will actually affect the first stage circuit, which is called load effect. When the load is connected to the system, the system may not have a simple input-output relationship.
 
-## 3 系统方框图
-描述控制系统的一大方式就是使用方框图，用有向线段表示信号的流通方向，方框表示系统模块，圆形表示加法器。方框图指明了信号的流动以及各部分对于信号的处理。
+## 3 System Block Diagram
+One way to describe the control system is to use the block diagram, in which the flow direction of the signal is represented by the directed line segment, the system module is represented by the box, and the adder is represented by the circle. The block diagram indicates the flow of signals and the processing of signals by various parts.
 
-有了系统的方框图，下一步就是求解整个系统的传递函数。
+With the block diagram of the system, the next step is to solve the transfer function of the whole system.
 
-## 4 传递函数求解
-### 4.1 消解系数法
-把方框图所有的信号写出来，根据信号的处理把模块输入和输出的关系写出来，然后把中间变量全部消除，的到最终输出与输入的关系。这种方法最简单，但在系统变得很复杂的时候不简便。
+## 4 Transfer Function Solution
+### 4.1 Digestion Coefficient Method
+Write all the signals in the block diagram, write the relationship between the input and output of the module according to the signal processing, and then eliminate all the intermediate variables to obtain the relationship between the final output and the input. This method is the simplest, but it is not easy when the system becomes very complex.
 
-### 4.2 结构图等效变换法
-结构图有很多等效变换的法则，灵活使用它们可以将系统的传递函数找出来，这个过程也叫做化简。
+### 4.2 Equivalent Transformation Method
+There are many equivalent transformation rules in the structure diagram. Flexible use of them can find out the transfer function of the system. This process is also called simplification.
 
-#### 4.2.1 反馈等效
-系统前向模块是$G(s)$，反馈模块是$H(s)$，系统等效为
+#### 4.2.1 Feedback equivalence
+The forward module of the system is $G(s)$, the feedback module is $H(s)$, and the system is equivalent to
 
 $$
 \frac{G(s)}{1+G(s)H(s)}
@@ -113,8 +112,9 @@ $$
 <div align=left>
 
 
-#### 4.2.2 串联等效
-系统$G_1(s)$与$G_2(s)$串联，等效为
+#### 4.2.2 Series equivalence
+System $G_1(s)$ and $G_2(s)$ in series, equivalent to
+
 $$
 G_1(s)\cdot G_2(s)
 $$
@@ -123,37 +123,38 @@ $$
 <img src="https://pic.imgdb.cn/item/62209dfd5baa1a80abc3158d.jpg"></img>
 <div align=left>
 
-#### 4.2.3 并联等效
-系统$G_1(s)$与$G_2(s)$并联，等效为
+#### 4.2.3 Parallel equivalence
+System $G_1(s)$ and $G_1(s)$ parallel connection, equivalent to
+
 $$
 G_1(s)+G_2(s)
 $$
 
-#### 4.3.4 比较点前移
-> 加法器也叫比较器，因为它将两个输入的信号进行相减(信号1加上负的信号2)
+#### 4.3.4 Comparison point forward
+> The adder is also called a comparator because it subtracts two input signals (signal 1 plus negative signal 2)
 
-比较点在$G(s)$后面，相当于没有经过$G(s)$，前移过后信号就经过$G(s)$了，这时候需要乘以逆系统$\frac{1}{G(s)}$。
+The comparison point is after $G(s)$, which is equivalent to that the signal will pass through $G(s)$ after the forward shift without passing $G(s)$. At this time, it needs to be multiplied by the inverse system $\frac{1}{G(s)}$.
 
 <div align=center> 
 <img src="https://pic.imgdb.cn/item/62209e425baa1a80abc33dc6.jpg"></img>
 <div align=left>
 
-#### 4.3.5 比较点后移
-反过来，比较点本来在$G(s)$前面，相当于经过了$G(s)$，后移之后就没有经过$G(s)$了，所以要补上一个$G(s)$。
+#### 4.3.5 Comparison point backward
+On the other hand, the comparison point was originally in front of $G(s)$, which is equivalent to passing $G(s)$. After moving back, it did not pass $G(s)$, so you need to add a $G(s)$.
 
 <div align=center> 
 <img src="https://pic.imgdb.cn/item/62209e125baa1a80abc32422.jpg"></img>
 <div align=left>
 
-#### 4.3.6 引出点前移
-引出点在系统后面，则原信号是经过了系统的，移到前面之后就相当于没有经过系统就引出了，则需要补上一个$G(s)$
+#### 4.3.6 Lead out point forward
+If the lead out point is behind the system, the original signal has passed through the system. If it is moved to the front, it is equivalent to being led out without passing through the system, and a $G(s)$ needs to be added.
 
 <div align=center> 
 <img src="https://pic.imgdb.cn/item/62209e245baa1a80abc32da1.jpg"></img>
 <div align=left>
 
-#### 4.3.7 引出点后移
-引出点在系统前面，则原信号没有经过系统，移到后面之后就相当于经过了系统才引出，所以需要乘以一个逆系统$\frac{1}{G(s)}$
+#### 4.3.7 Lead out point backward
+If the leading point is in front of the system, the original signal does not pass through the system. After moving to the back, it is equivalent to passing through the system before being led out. Therefore, it needs to be multiplied by an inverse system $\frac{1}{G(s)}$.
 
 <div align=center> 
 <img src="https://pic.imgdb.cn/item/62209e375baa1a80abc338b6.jpg"></img>
