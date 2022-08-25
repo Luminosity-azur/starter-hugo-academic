@@ -1,22 +1,22 @@
 ---
-# An instance of the Pages widget.
-# Documentation: https://wowchemy.com/docs/page-builder/
-widget: pages
+# An instance of the Tag Cloud widget.
+# Docs: https://wowchemy.com/docs/page-builder/
+widget: tag_cloud
 
 # This file represents a page section.
 headless: true
 
 # Order that this section appears on the page.
-weight: 100
+weight: 120
 
-title: Recent Posts
-subtitle:
+title: Hobbies
+subtitle: ''
 
 content:
   # Filter on criteria
   filters:
     folders:
-      - post
+      - hobby
     tag: ''
     category: ''
     publication_type: ''
@@ -25,14 +25,13 @@ content:
     exclude_future: false
     exclude_past: false
   # Choose how many pages you would like to display (0 = all pages)
-  count: 5
+  count: 0
   # Choose how many pages you would like to offset by
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
-
 design:
   # Choose a view for the listings:
-  view: Compact
-  columns: '2'
+  view: list
+  columns: '3'
 ---
