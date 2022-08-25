@@ -17,8 +17,8 @@ main:
     url: '#posts'
     weight: 40
   - name: Hobbies
-    url: '#Hobbies'
-    weight: 50
+    url: '#hobbies'
+    weight: 60
   # - name: Talks
   #   url: '#talks'
   #   weight: 40
