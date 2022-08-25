@@ -1,7 +1,7 @@
 ---
-# An instance of the Tag Cloud widget.
-# Docs: https://wowchemy.com/docs/page-builder/
-widget: pages
+# An instance of the Featurette widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: featurette
 
 # This file represents a page section.
 headless: true
@@ -10,28 +10,36 @@ headless: true
 weight: 120
 
 title: Hobbies
-subtitle: ''
+subtitle:
 
-content:
-  # Filter on criteria
-  filters:
-    folders:
-      - hobby
-    tag: ''
-    category: ''
-    publication_type: ''
-    author: ''
-    exclude_featured: false
-    exclude_future: false
-    exclude_past: false
-  # Choose how many pages you would like to display (0 = all pages)
-  count: 0
-  # Choose how many pages you would like to offset by
-  offset: 0
-  # Page order: descending (desc) or ascending (asc) date.
-  order: desc
-design:
-  # Choose a view for the listings:
-  view: list
-  columns: '3'
+# Showcase personal skills or business features.
+# - Add/remove as many `feature` blocks below as you like.
+# - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
+feature:
+  - description:
+    icon: camera-retro
+    icon_pack: fas
+    name: Photography
+  - description:
+    icon: violin
+    icon_pack: fas
+    name: Orchestral music
+  - description:
+    icon: people-line
+    icon_pack: fab
+    name: Debate
+# Uncomment to use emoji icons.
+#- icon: ":smile:"
+#  icon_pack: "emoji"
+#  name: "Emojiness"
+#  description: "100%"
+
+# Uncomment to use custom SVG icons.
+# Place your custom SVG icon in `assets/media/icons/`.
+# Reference the SVG icon name (without `.svg` extension) in the `icon` field.
+# For example, reference `assets/media/icons/xyz.svg` as `icon: 'xyz'`
+#- icon: "your-custom-icon-name"
+#  icon_pack: "custom"
+#  name: "Surfing"
+#  description: "90%"
 ---
