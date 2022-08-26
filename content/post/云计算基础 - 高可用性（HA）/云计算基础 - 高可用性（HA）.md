@@ -1,23 +1,25 @@
 ---
-title: 云计算基础 - 高可用性（HA）
-subtitle: 本文是对HA相关内容的阐释。
+title: Cloud Computing - High Availability (HA)
+subtitle: This post mainly explains the concept and working mode of HA.
 
 # Summary for listings and search engines
-summary: 本文是对HA相关内容的阐释。
+summary: This post mainly explains the concept and working mode of HA.
 
 tags: 
-- 云计算
+- Cloud Computing
 
 categories: 
-- 云计算
+- Cloud Computing
 
 date: '2022-05-23'
 math: true
 ---
-### 什么是高可用性 (HA)
-　　“高可用性”（High Availability）通常来描述一个系统经过专门的设计，从而减少停工时间，而保持其服务的高度可用性。 
-　　例如我们希望电力、水力服务是高可用性的系统。 
-　　计算机系统的可靠性用平均无故障时间（MTTF）来度量，即计算机系统平均能够正常运行多长时间，才发生一次故障。系统的可靠性越高，平均无故障时间越长。可维护性用平均维修时间（MTTR）来度量，即系统发生故障后维修和重新恢复正常运行平均花费的时间。系统的可维护性越好，平均维修时间越短。计算机系统的可用性定义为：MTTF/(MTTF+MTTR) * 100%。由此可见，计算机系统的可用性定义为系统保持正常运行时间的百分比。
+### Definition of High Availability (HA)
+"High availability" usually describes that a system is specially designed to reduce downtime and maintain high availability of its services.
+
+For example, we hope that power and hydraulic services are highly available systems.
+The reliability of computer system is measured by mean time between failures (MTTF), that is, how long the computer system can operate normally before a failure occurs. The higher the reliability of the system, the longer the mean time between failures. Maintainability is measured by mean time to repair (MTTR), i.e. the average time taken to repair and restore normal operation after system failure. The better the maintainability of the system, the shorter the average maintenance time. The availability of computer system is defined as: MTTF / (MTTF + MTTR) * 100%. It can be seen that the availability of a computer system is defined as the percentage of the normal operation time of the system.
+
 ### 负载均衡服务器的高可用性 
 　　为了屏蔽负载均衡服务器的失效，需要建立一个备份机。主服务器和备份机上都运行High Availability监控程序，通过传送诸如“I am alive”这样的信息来监控对方的运行状况。当备份机不能在一定的时间内收到这样的信息时，它就接管主服务器的服务IP并继续提供服务；当备份管理器又从主管理器收到“I am alive”这样的信息是，它就释放服务IP地址，这样的主管理器就开开始再次进行集群管理的工作了。为在主服务器失效的情况下系统能正常工作，我们在主、备份机之间实现负载集群系统配置信息的同步与备份，保持二者系统的基本一致。
 ### HA的容错备援运作过程 

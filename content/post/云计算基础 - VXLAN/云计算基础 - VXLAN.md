@@ -1,61 +1,49 @@
 ---
-title: 云计算基础 - VXLAN
-subtitle: 本文是对VXLAN相关内容的阐释。
+title: Cloud Computing - Virtual eXtensible Local Area Network (VxLAN)
+subtitle: This post describes the background, principle and format of VxLAN.
 
 # Summary for listings and search engines
-summary: 本文是对VXLAN相关内容的阐释。
+summary: This post describes the background, principle and format of VxLAN.
 
 tags: 
-- 云计算
+- Cloud Computing
 
 categories: 
-- 云计算
+- Cloud Computing
 date: '2022-06-12'
 math: true
 ---
-### VXLAN概述及产生原因
-1、虚拟机规模收到网络设备表现规格的限制
+## VxLAN overview and causes
+1. The scale of virtual machine is limited by the performance specification of network equipment
+Server virtualization leads to a geometric increase in the number of virtual machines, which is accompanied by a sharp increase in the number of MAC addresses of virtual machine network cards. The MAC address table specification of the layer 2 device on the original access side cannot meet the rapidly growing number of virtual machines.
+**VxLAN solution:**
+VxLAN encapsulates the message sent by the virtual machine in the same area planned by the network administrator into a new UDP message, and uses the IP and MAC addresses of the physical network as the outer layer header, so that the message only shows the encapsulated parameters to other devices in the network.
 
-服务器虚拟化导致虚拟机的数量呈现几何级增加，伴随而来的是虚拟机网卡MAC地址数量的剧增。原接入侧的二层设备的MAC地址表规格不能满足快速增长的虚拟机数量。
 
-VXLAN的解决方式：
+2. The isolation capability of the network is limited
+For the current public cloud or large-scale virtualized computing server needs tens of thousands or more tenants, the existing VLAN number is insufficient to meet this demand
+**VxLAN solution:**
+VxLAN introduces a user ID similar to VLAN ID and becomes the vxlan network identifier VNI (VxLAN network identifier), which is composed of 24 bits. Therefore, it can support up to 16M VxLAN segments.
 
-VXLAN将网络管理员规划的同一区域内的虚拟机发出的报文封装成新的UDP报文，并使用物理网络的IP和MAC地址作为外层头，这样报文对网络中的其他设备只表现为封装后的参数。
 
-2、网络的隔离能力有限
+3. Virtual machine migration scope is limited
+The traditional two-layer network can not meet the virtual machine migration that has become a normal job, nor can it meet the business of ensuring that the migration range and the availability of services are not limited.
+**VxLAN solution:**
+VxLAN encapsulates the original message sent by the virtual machine and transmits it through the VxLAN tunnel. This tunnel can span any network. Therefore, for virtual machines in the same network segment, it is logically equivalent to being in the same layer 2 domain. In other words, VxLAN technology can build a virtual layer 2 network on the three-layer network. As long as the virtual machine route is reachable, it can be planned into the same layer 2 network.
 
-对于现今公有云或者大型虚拟化计算服务器需要上万甚至更多租户的情况，现有的VLAN数量不足以满足这个需求
+## Principle of VxLAN
+VxLAN is a network virtualization technology. It encapsulates the data packets sent by the original host in UDP, and uses the IP and MAC of the physical network as the outermost headers to encapsulate them in parallel, and then transmits them on the IP network. After reaching the destination, the tunnel endpoint decapsulates and sends the data to the target host.
+UDP port number of VxLAN: 4789
 
-VXLAN的解决方式：
+## VxLAN message encapsulation format
+VxLAN communication process:
+1. The sender sends a data frame to the receiver, which contains the virtual MAC addresses of the sender and the receiver.
+2. The VTEP node connected by the sender receives the data frame, encapsulates it and sends it to the destination VTEP node.
+3. The message is transmitted to the destination VTEP node through the Underlay network
+4. After receiving the message, the destination VTEP node decapsules the internal data frame and delivers the data frame to the receiver.
+5. The receiver receives the data frame and completes the transmission.
 
-VXLAN引入了类似VLAN ID的用户标识，成为VXLAN网络标识VNI （VXLAN Network Idendifier）,由24bit组成，因此最多可支持16M的VXLAN段。
-
-3、虚拟机迁移范围受限
-
-传统的二层网络，不能满足已经成为常态的作业的虚拟机迁移，也不能满足保障迁移范围和业务的可用性不受限制等业务。
-
-VXLAN的解决方式:
-
-VXLAN将虚拟机发出的原始报文进行封装后通过VXLAN隧道进行传输，这个隧道可以跨越任意网络，因此对于处于同一网段的虚拟机而言，从逻辑上看，相当于处于同一个二层域。也就是说，VXLAN技术在三层网络上构建可一个虚拟的大二层网络，只要虚拟机路由可达，就可以将其规划到同一个大二层网络中。
-
-### VXLAN的原理
-VXLAN是一种网络虚拟化技术,通过将原主机发出的数据报文封装在UDP中，并使用物理网络的IP、MAC最为外层头并行封装,然后在IP网络上传输,到达目的地后由隧道终结点解封装并将数据发送到目标主机。
-VXLAN的UDP端口号:4789
-
-### VXLAN报文封装格式
-VXLAN的通信过程:
-
-1、发送方向接收方发送数据帧，帧中包含了发送方和接收方的虚拟MAC地址。
-
-2、发送方连接的VTEP节点收到了数据帧，进行封装并发送给目的VTEP节点。
-
-3、报文经过Underlay网络传输到目的的VTEP节点
-
-4、目的VTEP节点收到报文后，解封装得到内部数据帧，并将此数据帧交付给接收方。
-
-5、接收方收到数据帧，传输完成。
-
-### 配置实例
+## VxLAN Configuration instance
 <div align=center> 
 <img src = 'https://s3.bmp.ovh/imgs/2022/07/13/75ba1a3b4bb833a8.png'></img>
 <div align=left>

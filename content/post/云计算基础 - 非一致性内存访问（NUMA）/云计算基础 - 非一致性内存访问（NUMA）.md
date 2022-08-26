@@ -1,47 +1,46 @@
 ---
-title: 云计算基础 - 非一致性内存访问（NUMA）
-subtitle: 本文是对NUMA相关内容的阐释。
+title: Cloud Computing - Non-Uniform Memory Access (NUMA)
+subtitle: This post is a basic introduction to the background and technical characteristics of NUMA.
 
 # Summary for listings and search engines
-summary: 本文是对NUMA相关内容的阐释。
+summary: This post is a basic introduction to the background and technical characteristics of NUMA.
 
 tags: 
-- 云计算
+- Cloud Computing
 
 categories: 
-- 云计算
+- Cloud Computing
 
 date: '2022-06-04'
 math: true
 ---
-### 三种系统架构 & 两种存储器共享方式
-从系统架构来看，目前的商用服务器大体可以分为三类：
+### Three system architectures & Two memory sharing methods
+From the perspective of system architecture, the current commercial servers can be broadly divided into three categories:
 
-（1）对称多处理器结构(SMP：Symmetric Multi-Processor)
+1. Symmetric Multi-Processor (SMP)
+2. Non-Uniform Memory Access (NUMA)
+3. Massive Parallel Processing (MPP)
 
-（2）非一致内存访问结构(NUMA：Non-Uniform Memory Access)
+There are two technologies for shared memory multiprocessors:
 
-（3）海量并行处理结构(MPP：Massive Parallel Processing)。
+1. Uniform-Memory-Access (UMA)
+2. Nonuniform-Memory-Access (NUMA)
 
-共享存储型多处理机有两种技术
+### Uniform-Memory-Access (UMA)
+UMA is a shared memory architecture in parallel computers, that is, physical memory is shared uniformly by all processors and has the same access time for all stored words. Each processor can have a private cache, and peripheral devices can also be shared in some form. UMA technology is suitable for applications with common requirements and multi-user shared time. In applications with strict timing requirements, it is used to accelerate the execution rate of a single large-scale program.
 
-（1）均匀存储器存取（Uniform-Memory-Access，简称UMA）技术
+### Nonuniform-Memory-Access (NUMA)
+NUMA is a memory design used in multiprocess computing, and the memory reading depends on the association between the current memory and the processor. Under NUMA technology, a processor accesses local memory faster than non-local memory (local memory of another processor or memory shared by the processor).
 
-（2）非均匀存储器存取（Nonuniform-Memory-Access，简称NUMA）技术
+### Virtual Nonuniform-Memory-Access (vNUMA)
+vNUMA eliminates the transparency between the VM and the operating system, and directly connects the NUMA architecture to the operating system of the VM. It is worth mentioning that vNUMA is as famous as NUMA in the industry. For a wide range of VM technologies, the underlying architecture of VM operation, the NUMA topology of VM spans multiple NUMA nodes. After the initial function of vNUMA enabled VM, the architecture presented to the operating system is permanently defined and cannot be modified. This limitation is usually positive, because changing the vNUMA architecture may lead to instability of the operating system, but if the VM migrates to a hypervisor with a different NUMA architecture through vMotion, it may cause performance problems. It is worth mentioning that although most applications can use vNUMA, most VMS are small enough to load NUMA nodes; Recent optimizations to wide-VM support or vNUMA do not affect them.
 
-### UMA技术
-UMA是并行计算机中的共享存储架构，即物理存储器被所有处理机均匀共享，对所有存储字具有相同的存取时间。每台处理机可以有私用高速缓存,外围设备也以一定形式共享。UMA技术适合于普通需求和多用户共享时间的应用，在时序要求严格的应用中，被用作加速单一大型程序的执行率。
+Therefore, how the guest operating system or its application places processes and memory can significantly affect performance. The advantage of exposing NUMA topology to VM is that it allows users to make optimal decisions according to the underlying NUMA architecture. By assuming that the user operating system will make the best decisions in the exposed vNUMA topology, rather than inserting memory between NUMA clients.
 
-### NUMA技术
-NUMA是用于多进程计算中的存储设计，存储读取取决于当前存储器与处理器的关联。在NUMA技术下，处理器访问本地存储器比非本地存储器（另一个处理器的本地存储器或者处理器共享的存储器）更快。
 
-### vNUMA
-vNUMA消除了VM和操作系统之间的透明性，并将NUMA架构直通到VM的操作系统。值得一提的是，vNUMA在业内与NUMA同样盛名。对于一个广泛VM技术，VM运行的底层架构，VM的NUMA拓扑跨越多个NUMA节点。在启用了vNUMA的VM的初始功能之后，呈现给操作系统的架构是永久定义的，并且不能被修改。这个限制通常是正面的，因为改变vNUMA体系结构可能会导致操作系统的不稳定，但是如果VM通过vMotion迁移到带有不同NUMA架构的管理程序，则可能导致性能问题。值得一提的是，尽管大多数应用程序都可以利用vNUMA，但大多数VM都足够小，可以装入NUMA节点;最近对宽-VM支持或vNUMA的优化并不影响它们。
+### Importance of NUMA
+Multithreaded applications need to access the local memory of the CPU core. When it must use remote memory, the performance will be affected by the delay. Accessing remote memory is much slower than accessing local memory. So using NUMA will improve performance. Modern operating systems attempt to schedule processes on NUMA nodes (local memory + local CPU = NUMA nodes), and processes will use local NUMA nodes to access the core. ESXi also uses NUMA technology for a wide range of virtual machines. When the virtual core is greater than 8, the virtual core is distributed on multiple NUMA nodes. When the machine starts, the virtual core will be distributed to different NUMA nodes, which will improve performance because the virtual core will access local memory.
 
-因此，客户操作系统或它的应用程序如何放置进程和内存会显著影响性能。将NUMA拓扑暴露给VM的好处是，允许用户根据底层NUMA架构做出最优决策。通过假设用户操作系统将在暴露的vNUMA拓扑结构中做出最佳决策，而不是在NUMA客户机之间插入内存。
 
-### NUMA的重要性
-多线程应用程序需要访问CPU核心的本地内存，当它必须使用远程内存时，性能将会受到延迟的影响。访问远程内存要比本地内存慢得多。所以使用NUMA会提高性能。 现代操作系统试图在NUMA节点（本地内存+本地CPU=NUMA节点）上调度进程，进程将使用本地NUMA节点访问核心。ESXi还使用NUMA技术为广泛的虚拟机，当虚拟核心大于8时，将虚拟核心分布在多个NUMA节点上。当机器启动时，虚拟核心将被分发到不同的NUMA节点，它将提高性能，因为虚拟核心将访问本地内存。
-
-### 总结
-首当为一个虚拟内核分配了更多的虚拟Socket，或者一个虚拟Socket分配更多的虚拟内核时，这之间的差别并不影响NUMA节点数量。虚拟Socket只会影响软件许可证而不是性能。
+### summary
+When more virtual sockets are allocated to a virtual kernel, or more virtual cores are allocated to a virtual socket, the difference does not affect the number of NUMA nodes. Virtual sockets only affect software licenses, not performance.

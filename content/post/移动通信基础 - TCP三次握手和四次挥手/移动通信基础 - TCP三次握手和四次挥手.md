@@ -1,38 +1,37 @@
 ---
-title: 移动通信基础 - TCP三次握手和四次挥手
-subtitle: 本文是对TCP三次握手和四次挥手相关内容的阐释。
+title: Mobile Communication - TCP Three-way Handshake and Four-Way Wavehand
+subtitle: This article is an explanation of "TCP Three-way Handshake and Four-Way Wavehand".
 
 # Summary for listings and search engines
-summary: 本文是对TCP三次握手和四次挥手相关内容的阐释。
+summary: This article is an explanation of "TCP Three-way Handshake and Four-Way Wavehand".
 
 tags: 
-- 移动通信
+- Mobile Communication
 
 categories: 
-- 移动通信
+- Mobile Communication
 date: '2022-04-17'
 math: true
 ---
 
-# 三次握手
-第一次握手：客户端发送syn包(syn=x)到服务器，并进入SYN_SEND状态，等待服务器确认；
+## Three-way Handshake
+- First handshake: the client sends a SYN packet (syn=x) to the server and enters SYN_SEND status, waiting for server confirmation;
 
-第二次握手：服务器收到syn包，必须确认客户的SYN（ack=x+1），同时自己也发送一个SYN包（syn=y），即SYN+ACK包，此时服务器进入SYN_RECV状态；
+- Second handshake: when the server receives the SYN packet, it must confirm the SYN (ack=x+1) of the client and send a SYN packet (syn = y), that is, SYN+ACK packet. At this time, the server enters SYN_RECV status;
 
-第三次握手：客户端收到服务器的SYN＋ACK包，向服务器发送确认包ACK(ack=y+1)，此包发送完毕，客户端和服务器进入ESTABLISHED状态，完成三次握手。
+- Third Handshake: after receiving the SYN+ACK packet from the server, the client sends an acknowledgement packet ACK (ack=y+1) to the server. After this packet is sent, the client and the server enter the ESTABLISHED state and complete the third handshake.
 
-握手过程中传送的包里不包含数据，三次握手完毕后，客户端与服务器才正式开始传送数据。理想状态下，TCP连接一旦建立，在通信双方中的任何一方主动关闭连接之前，TCP 连接都将被一直保持下去。
-
-
+The packet transmitted during the handshake does not contain data. After the three handshakes, the client and the server formally start to transmit data. In an ideal state, once a TCP connection is established, the TCP connection will be maintained until either of the communication parties actively closes the connection.
 
 
-# 四次挥手
-与建立连接的“三次握手”类似，断开一个TCP连接则需要“四次握手”。
 
-第一次挥手：主动关闭方发送一个FIN，用来关闭主动方到被动关闭方的数据传送，也就是主动关闭方告诉被动关闭方：我已经不 会再给你发数据了(当然，在fin包之前发送出去的数据，如果没有收到对应的ack确认报文，主动关闭方依然会重发这些数据)，但是，此时主动关闭方还可 以接受数据。
+## Four-Way Wavehand
+Similar to the "three-way handshake" for establishing a connection, disconnecting a TCP connection requires "four-Way Wavehand".
 
-第二次挥手：被动关闭方收到FIN包后，发送一个ACK给对方，确认序号为收到序号+1（与SYN相同，一个FIN占用一个序号）。
+- First wave: the active closing party sends a FIN to close the data transmission from the active party to the passive Closing Party, that is, the active Closing Party tells the passive closing party that I will not send you any more data (for the data sent before the FIN packet, if the corresponding ACK acknowledgement message is not received, the active closing party will still resend the data). However, the active closing party can still accept the data at this time.
 
-第三次挥手：被动关闭方发送一个FIN，用来关闭被动关闭方到主动关闭方的数据传送，也就是告诉主动关闭方，我的数据也发送完了，不会再给你发数据了。
+- Second wave: after receiving the FIN packet, the passive closing party sends an ACK to the other party, confirming that the sequence number is the received sequence number + 1 (the same as SYN, one FIN occupies one sequence number).
 
-第四次挥手：主动关闭方收到FIN后，发送一个ACK给被动关闭方，确认序号为收到序号+1，至此，完成四次挥手。
+- Third wave: the passive closing party sends a FIN to close the data transmission from the passive closing party to the active Closing Party, that is, to tell the active closing party that my data has been sent and will not be sent to you again.
+
+- Fourth wave: after the active closing party receives the FIN, it sends an ACK to the passive Closing Party, and confirms that the serial number is the received serial number + 1. So far, the fourth wave is completed.
