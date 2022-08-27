@@ -9,10 +9,10 @@ summary: This is a brief summary of my research on WSN node location algorithms.
 projects: []
 
 # Date published
-date: '2022-07-30T00:00:00Z'
+date: '2022-05-30'
 
 # Date updated
-lastmod: '2022-07-30T00:00:00Z'
+lastmod: '2022-05-30'
 
 # Is this an unpublished draft?
 draft: false
@@ -40,6 +40,10 @@ image:
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/21/bcd351f97c3bde61.png' >
 </div>
 
+<br/>
+<br/>
+<br/>
+
 ## Preliminary
 ### Particle Swarm Optimization
 
@@ -60,6 +64,10 @@ image:
 - Can jump out of the local optimal solution with a certain probability
 </div>
 
+<br/>
+<br/>
+<br/>
+
 ## Methodology
 - Introduce the SA algorithm to break through the local optimal characteristics
 - Improve the acceptance process of PSO algorithm in individual extreme value update
@@ -68,6 +76,9 @@ image:
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/21/529bb1c584512295.png' >
 </div>
 
+<br/>
+<br/>
+<br/>
 
 ## Experiments & Discussions
 
@@ -83,6 +94,10 @@ SA-PSO vs Traditional PSO
 - More reasonable positioning
 </div>
 
+<br/>
+<br/>
+<br/>
+
 ## Critical Analysis
 
 1. Existing Flaws
@@ -94,4 +109,4 @@ SA-PSO vs Traditional PSO
 - PSO dynamic inertia weight
 - PSO contraction learning factor
 - SA inner loop with adaptive sampling stability condition
-- Large scale node location (number, range) conditions should be considered (**already in the experimental process...**)
+- Large scale node location (number, range) conditions should be considered (**already been implemented in my publication**)

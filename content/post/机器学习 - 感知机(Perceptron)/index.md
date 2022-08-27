@@ -7,7 +7,6 @@ summary: This post is an exposition of perceptron in machine learning.
 
 tags: 
 - Machine Learning
-- Statistical Learning
 
 categories: 
 - Machine Learning

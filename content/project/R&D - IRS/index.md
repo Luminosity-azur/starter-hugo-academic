@@ -2,16 +2,16 @@
 title: IRS
 
 # Summary for listings and search engines
-summary: 本文为IRS基础内容梳理。
+summary: This paper combs the basic contents of IRS.
 
 # Link this post with a project
 projects: []
 
 # Date published
-date: '2021-07-23T00:00:00Z'
+date: '2021-07-23'
 
 # Date updated
-lastmod: '2021-07-23T00:00:00Z'
+lastmod: '2021-07-23'
 
 # Is this an unpublished draft?
 draft: false
@@ -31,62 +31,85 @@ image:
   focal_point: Smart
 ---
 
-本文为IRS基础内容梳理。
+This paper combs the basic contents of IRS.
 
-## 研究背景
-### 6G的提出及新改变
-第一，未来的应用对通信系统还有更高的要求：存储量；数据率，通信可靠性等。包括未来可能的大规模工业物联网，车联网所提出的要求还没有完全满足
-第二，5G技术虽然已经发展，但是成本能耗以及设计复杂度方面还有很多不足，在实际应用中存在一定问题
+## Research Background
+### Proposal and new changes of 6G
+1. Future applications have higher requirements for communication systems: storage capacity; Data rate, communication reliability, etc. Including the possible large-scale industrial Internet of things in the future, the requirements of the Internet of vehicles have not been fully met
 
-现有技术都是在基站端或用户端设计优化，而对于中间的无线信道这段认为是不可控，所以通过各种调制编码技术来适应多变的信道。
-
-**IRS自下而上，主动的改变无线信道，而不是被动适应。**
+2. Although 5G technology has been developed, there are still many deficiencies in cost, energy consumption and design complexity, and there are certain problems in practical application
 
 
+**The IRS actively changes the wireless channel from bottom to top, instead of passively adapting**
 
-## IRS的基本概念
-与现在技术最根本的区别就是reflecting，现在的技术本质上都是通过发射、接收，而不是反射的概念。
-IRS中的intelligent是两方面的：
-- 硬件上智能反射单元是可重构的；
-- 软件上与IRS相关的信号处理，波束赋形，人工智能，凸优化设计等也是智能的。
+## Basic concepts of IRS
+The most fundamental difference from the current technology is reflecting. In essence, the current technology is based on the concept of transmission and reception rather than reflection.
 
+Intelligent in IRS is two-sided:
+- The intelligent reflection unit is reconfigurable in hardware;
+- The signal processing, beamforming, artificial intelligence and convex optimization design related to IRS are also intelligent in software.
 
-## IRS的结构
+<br/>
+<br/>
+
+---
+
+## Structure of IRS
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/19/0620bae9c0dbefdd.png' >
 
-第一层是与电磁波直接接触的表面，上面有很多反射单元，通过控制反射单元的反射相位进而调节入射波方向；
-第二层是接触背板，主要用来防止电磁波信号在反射表面背后的泄露，提高反射效率；
-第三层用于调制反射表面与控制器，控制器可以用FPGA做成，**通过对出射信号控制，调节反射面上反射单元相位；**或者控制器（通过安装一些sensor）也可以用来环境感知，可以帮助反射面在反射模式与智能感知之间做一个模式切换。举例来说：反射单元有一个二极管组成，通过对二极管偏执电压调节，可以获得1比特相位（比如0和π）的切换。
+The first layer is a surface directly in contact with the electromagnetic wave, and there are many reflection units on it. The direction of the incident wave can be adjusted by controlling the reflection phase of the reflection units;
 
+The second layer is the contact back plate, which is mainly used to prevent the leakage of electromagnetic wave signals behind the reflection surface and improve the reflection efficiency;
 
-## IRS的波束赋形
+The third layer is used to modulate the reflection surface and the controller. The controller can be made of FPGA, **adjust the phase of the reflection unit on the reflection surface by controlling the output signal** Or the controller (by installing some sensors) can also be used for environmental sensing, which can help the reflective surface to switch between the reflective mode and intelligent sensing. For example, the reflection unit is composed of a diode. By adjusting the bias voltage of the diode, the switching of 1-bit phase (such as 0 and π) can be achieved.
+
+<br/>
+<br/>
+
+---
+
+## Beam shaping of IRS
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/19/640c1b9c562ba4ab.png' >
 
-以上自适应的波束赋形，因为需要控制每个反射单元，所以需要消耗一定能量，但是与现有的MIMO不同的是不需要任何射频链路。
-每个反射单元像一个点源一样，将收到的信号发射出去
+The above adaptive beamforming needs to control each reflection unit, so it needs to consume a certain amount of energy. However, unlike the existing MIMO, it does not require any radio frequency link.
+
+Each reflection unit is like a point source and emits the received signal
 
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/19/78a13fecd91ff88b.png' >
 
-a.反射单元幅度最大为1，因为无源的，不会进行任何放大。幅度为0则是稀疏反射；幅度为1则是全反射。
-b.反射相位我们一般希望可以在0-2π之间连续取值；但考虑到实际应用中的成本及可行性，可取离散值。
-c.对于整个反射矩阵，是diag形式；因为每个反射单元是独立对如射信号产生影响的。
+1. The maximum amplitude of the reflection unit is 1, because it is passive and will not be amplified. The amplitude of 0 is sparse reflection; The amplitude of 1 is total reflection.
+2. We generally hope that the reflection phase can be continuously taken between 0-2 π; However, considering the cost and feasibility in practical application, discrete values can be taken.
+3. For the whole reflection matrix, it is in diag form; Because each reflection unit has an independent influence on the reflected signal.
 
 
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/19/9186ac341fc32dd5.png' >
-以上是对IRS离散幅度和相移的介绍。
-一般的离散思路有：均匀量化。但是均匀量化也不一定是最优的，要看实际的应用场景。举例：反射幅度在给1比特情况下，离散值取（0，1）or（0.5，1）要根据信道统计特性等。
-相控反射面：幅度固定，相移量化
-幅控反射面：相位固定，幅度量化
-相比较来说，幅控反射面复杂度更低。第二篇文章是幅控的文章
+The above is the introduction of IRS discrete amplitude and phase shift.
+The general discrete ideas are: uniform quantization. However, even quantization is not necessarily optimal, depending on the actual application scenario. For example, when the reflection amplitude is given 1 bit, the discrete value (0, 1) or (0.5, 1) shall be taken according to the channel statistical characteristics.
+
+- Phased reflector : fixed amplitude, phase shift quantization 
+- Amplitude control reflector : phase fixed, amplitude quantization
+  
+In comparison, the complexity of amplitude controlled reflector is lower.
 
 
-## IRS的路径损失
-在IRS中，路径损失的公式为第一个；
-第二个只适用于反射面无穷大（IRS在研究时是对单个反射单元研究进行信号反射，所以不能认为是无穷大），且不适用于相控/幅控的IRS
+<br/>
+<br/>
+
+---
+
+
+## Path loss of IRS
+In IRS, the formula of path loss is the first;
+The second one is only applicable to the infinity of the reflection surface (the IRS is used to study the signal reflection of a single reflection unit, so it cannot be considered as infinity) and is not applicable to the phase / amplitude controlled IRS
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/19/75ba0dd35559b42d.png' >
 
 
+<br/>
+<br/>
 
-## IRS的应用
+---
+
+
+## Application of IRS
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/19/6c55aa0f6a01bd6a.png' >
-以上应用提高了通信的覆盖率：IRS可以绕过障碍物进行通信，在未来高频段通信有广泛的应用。像mmWave等，频率增加，波长变小，高频波对障碍物的阻挡作用比较敏感，可以借助IRS提高性能。
+The above applications have improved the coverage rate of communication: IRS can bypass obstacles for communication and will be widely used in future high-frequency communication. Like mmWave, the frequency increases and the wavelength decreases. The high-frequency wave is sensitive to the barrier effect of obstacles, and the performance can be improved with the help of IRS.
