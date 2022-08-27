@@ -1,9 +1,9 @@
 ---
-title: Mobile Communication - 无线信道衰落
-subtitle: 本文是对无线信道衰落相关内容的梳理。
+title: Mobile Communication - Wireless channel fading
+subtitle: This post is a summary and analysis of various wireless channel fading.
 
 # Summary for listings and search engines
-summary: 本文是对无线信道衰落相关内容的梳理。
+summary: This post is a summary and analysis of various wireless channel fading.
 
 tags: 
 - Mobile Communication
@@ -14,40 +14,34 @@ date: '2022-04-26'
 math: true
 ---
 
-# 一、无线电波传播效应
-无线通信信道是一种时变信道，无线电信号通过信道时会遭受来自不同途径的衰落，接收信号总功率表现为路径损失，阴影衰落，多径效应三种效应的综合。
-（多径传播：电波遇到各种障碍物时会发生反射、绕射和散射现象，会对直射波形成干涉，也就是收发信机之间是有多条路径传播的。）
+## Radio wave propagation effect
+The wireless communication channel is a time-varying channel. When the radio signal passes through the channel, it will suffer from fading from different channels. The total power of the received signal is a combination of path loss, shadow fading and multipath effect.
+(multipath propagation: when radio waves encounter various obstacles, reflection, diffraction and scattering will occur, which will interfere with direct waves, that is, there are multiple paths between transceivers.)
+1. Path loss: the signal strength changes with distance (hundreds or thousands of wavelengths) in a large range, which should be proportional to the square of the distance, and in essence, it is a wave energy diffusion phenomenon.
+2. Shadowing: the median value of the signal level in the medium range changes slowly (hundreds of wavelengths). Due to the slow fading caused by the topographic relief in the propagation environment and the shielding of buildings and other obstacles, the median value of the signal changes slowly. The fading depth is related to the frequency and obstacles.
+3. Multipath effect (fading): the instantaneous value of the signal in a small range changes rapidly (tens of wavelengths). Due to the fast fading caused by multipath propagation, the instantaneous value of the field strength of the received signal changes rapidly.
 
-1.路径损失：大范围内信号强度随距离变化（数百或数千个波长），应该是与距离的平方成正比，本质上表现为电波能量扩散现象。
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
-2.阴影衰落：中范围信号电平中值慢变（数百个波长），由于传播环境中的地形起伏、建筑物及其他障碍物对电波遮蔽所引起的慢衰落，信号中值出现缓慢变动，衰落深度与频率、阻碍物有关。
+## Wireless channel fading
+According to the propagation effect of radio wave, the fading of radio channel is generally divided into two categories: large-scale fading and small-scale fading (the small scale is generally the same order of magnitude as the signal wavelength). The scale refers to the size of time or distance.
 
-3.多径效应（衰落）：小范围信号瞬时值快变（数十个波长），由于多径传播引起的快衰落，接收信号场强的瞬时值呈现快速变化。
+### Large-scale fading
+(including transmission loss and shadow fading; large-scale fading is slow fading, but slow fading is not necessarily large-scale fading.)
+
+Transmission loss (path loss): when a radio signal is transmitted through a large-scale distance channel, with the increase of the transmission path, the radio wave energy diffuses, resulting in the average power attenuation of the received signal. The attenuation is related to the transmission distance. The greater the distance, the more the attenuation.
+
+Shadow fading: when the radio signal is transmitted in the medium-scale distance channel, the shadow area is formed behind the obstacles due to the undulation of the terrain or the blocking of tall buildings, resulting in the random change of the average power of the received signal. Its fading characteristics obey lognormal distribution.
 
  
 
-# 二、无线信道衰落
-根据无线电波传播效应，通常将无线信道衰落分为两类：大尺度衰落和小尺度（小尺度一般与信号波长为一个量级）衰落，尺度指时间或者距离的大小。
+### Small-scale fading
+(caused by multipath effect or Doppler effect. When the transmission channel changes in small scale (distance or time), the radio signal is reflected, diffracted and scattered by surrounding obstacles during transmission, and its amplitude or phase changes rapidly.)
 
-## 大尺度衰落：
-（包括传输损失、阴影衰落；大尺度衰落都是慢衰落，但是慢衰落不一定是大尺度衰落。）
+According to the delay spread caused by multipath effect, small-scale fading is divided into frequency selective fading (the channel has constant gain and the bandwidth range of linear phase is smaller than the bandwidth of the transmitted signal) and frequency non selective / flat fading (the wireless channel bandwidth is larger than the bandwidth of the transmitted signal and has constant gain and linear phase within the bandwidth range);
 
-传输损失（路径损失）：无线电信号通过大尺度距离的信道传输时，随传输路径的增加，电波能量扩散，导致接收信号平均功率衰减，其衰减量与传输距离有关，距离越大，衰减量越多。
-
-阴影衰落：无线电信号在中尺度距离的信道中传输时，由于地形起伏或高大建筑物群等障碍物遮挡，在阻碍物的背后形成阴影区，导致接收信号平均功率随机变化。其衰落特性服从对数正态分布。
-
- 
-
-## 小尺度衰落：
-（由多径效应或多普勒效应引起。当传输信道小尺度(距离或时间)变化时，无线电信号在传输过程中受周围阻碍物反射、绕射和散射，其幅度或相位快速变化。）
-
-依据多径效应产生的时延扩展，将小尺度衰落划分为频率选择性衰落（信道具有恒定增益且线性相位的带宽范围小于发送信号带宽）和频率非选择性/平坦衰落（无线信道带宽大于发送信号的带宽，且在带宽范围内有恒定增益和线性相位）；
-
-依据多普勒效应产生的多普勒（频域）扩展，将小尺度衰落划分为快衰落（信道的相干时间比发送信号的周期短，且基带信号的带宽小于多普勒扩展）和慢衰落（信道上的相干时间远远大于发送信号的周期，且基带信号的带宽远远大于多普勒扩展）。
-
-
-
-# 三、整体理解示意图
-<div align=center> 
-<img src = 'https://s3.bmp.ovh/imgs/2022/05/09/47ced27228ee73bf.png'></img>
-<div align=left>
+According to the Doppler (frequency domain) spread generated by Doppler effect, small-scale fading is divided into fast fading (the coherence time of the channel is shorter than the period of the transmitted signal, and the bandwidth of the baseband signal is smaller than the Doppler spread) and slow fading (the coherence time of the channel is much longer than the period of the transmitted signal, and the bandwidth of the baseband signal is much larger than the Doppler spread).
