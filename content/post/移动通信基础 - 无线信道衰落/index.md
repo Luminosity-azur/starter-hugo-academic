@@ -1,5 +1,5 @@
 ---
-title: Mobile Communication - Wireless channel fading
+title: Mobile Communication - Wireless Channel Fading
 subtitle: This post is a summary and analysis of various wireless channel fading.
 
 # Summary for listings and search engines
