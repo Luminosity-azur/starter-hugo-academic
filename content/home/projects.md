@@ -28,11 +28,11 @@ content:
     - name: All
       tag: '*'
     - name: Millimeter wave communication
-      tag: Millimeter wave communication
+      tag: 'Millimeter wave communication'
     - name: IoT
-      tag: IoT
+      tag: 'IoT'
     - name: Other
-      tag: Other
+      tag: 'Other'
     # - name: Deep Learning
     #   tag: Deep Learning
 
