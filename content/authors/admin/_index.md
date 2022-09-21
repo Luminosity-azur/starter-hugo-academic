@@ -16,7 +16,7 @@ organizations:
     url: https://www.brunel.ac.uk/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Accelerate the the world's transition to the Internet of Everything.
+bio: Accelerate the world's transition to the Internet of Everything.
 # My research interests include millimeter wave channel modeling, WSN nodes positioning and swarm intelligence algorithm.
 
 # Interests to show in About widget
