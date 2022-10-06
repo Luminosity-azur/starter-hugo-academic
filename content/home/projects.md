@@ -31,6 +31,8 @@ content:
       tag: Millimeter wave communication
     - name: IoT
       tag: IoT
+    - name: Blockchain
+      tag: Blockchain
     - name: Other
       tag: Other
     # - name: Deep Learning

@@ -1,9 +1,9 @@
 ---
 title: Blockchain
-subtitle: This post includes the basic concepts, core technology, application, development and crisis of blockchain technology. It is a summary of relevant theoretical research in the previous period.
+subtitle: This post includes the basic concepts, core technology, application, development and crisis of blockchain technology.
 
 # Summary for listings and search engines
-summary: This post includes the basic concepts, core technology, application, development and crisis of blockchain technology. It is a summary of relevant theoretical research in the previous period.
+summary: This post includes the basic concepts, core technology, application, development and crisis of blockchain technology.
 
 # Link this post with a project
 projects: []
@@ -34,6 +34,7 @@ image:
 
 ---
 
+It is a summary of relevant theoretical research in the previous period.
 ## Basic concepts
 - What is blockchain?
 Blockchain is a kind of distributed ledger that can not be tampered with or forged, and is guaranteed by cryptography.
