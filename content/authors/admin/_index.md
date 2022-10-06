@@ -24,6 +24,7 @@ interests:
   - Millimeter Wave Communication
   - Life Information Network
   - Artificial Intelligence
+  - Blockchain
 
 
 # Education to show in About widget
