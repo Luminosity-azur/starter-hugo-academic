@@ -24,13 +24,12 @@ interests:
   - Millimeter Wave Communication
   - Life Information Network
   - Artificial Intelligence
-  - Blockchain
 
 
 # Education to show in About widget
 education:
   courses:
-    - course: BEng in Telecommunications Engineering
+    - course: BEng in Communication Engineering
       institution: Chongqing University of Posts and Telecommunications (CQUPT)
       year: 2019-2023
     - course: BEng in Electronic and Communications Engineering

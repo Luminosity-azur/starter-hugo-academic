@@ -37,6 +37,7 @@ image:
 This paper includes the basic concepts, core technology, application, development and crisis of blockchain technology.
 ## Basic concepts
 - What is blockchain?
+
 Blockchain is a kind of distributed ledger that can not be tampered with or forged, and is guaranteed by cryptography.
 Key characteristics: Decentralization, Tamper resistance, Anonymity, Safe and trusted
 
