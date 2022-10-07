@@ -64,18 +64,18 @@ Key characteristics: Decentralization, Tamper resistance, Anonymity, Safe and tr
 <br></br>
 
 ## Core technology
-1. P2P network
-  The end-to-end/point-to-point network is used to broadcast and spread all kinds of messages. Nodes can be accessed at will. Any two nodes are connected (decentralized), so messages can be transmitted to each other (forming a distributed ledger), and data is difficult to tamper with.
+1. P2P network  
+The end-to-end/point-to-point network is used to broadcast and spread all kinds of messages. Nodes can be accessed at will. Any two nodes are connected (decentralized), so messages can be transmitted to each other (forming a distributed ledger), and data is difficult to tamper with.
 
-2. Asymmetric encryption algorithm
-  Asymmetric encryption is mainly used in the blockchain. After hashing the transaction record or contract and other information, use the private key to encrypt to generate a digital signature and publish it to the network. Other nodes can verify whether the message has been tampered with through the public key to ensure security.
+2. Asymmetric encryption algorithm  
+Asymmetric encryption is mainly used in the blockchain. After hashing the transaction record or contract and other information, use the private key to encrypt to generate a digital signature and publish it to the network. Other nodes can verify whether the message has been tampered with through the public key to ensure security.
 
-3. Consensus mechanism
-  Trust can be established between unrelated nodes to reach a consensus on the consistency of the blockchain. Common consensus mechanisms include PoW, PoS, and DPoS
+3. Consensus mechanism  
+Trust can be established between unrelated nodes to reach a consensus on the consistency of the blockchain. Common consensus mechanisms include PoW, PoS, and DPoS
 
-4. Merkel tree
-  Store hash values for transactions.
-  Merkle Tree can be seen as a generalization of Hash List. The main difference between Merkle Tree and Hash List is that you can directly download and immediately verify a branch of Merkle Tree. Because the file can be divided into small data blocks, if a piece of data is damaged, just download the data block again. If the file is very large, Merkle tree and Hash list are both good. However, Merkle tree can download one branch at a time, and then immediately verify the branch. If the branch verification is passed, data can be downloaded. The hash list can only be verified by downloading the entire hash list.
+4. Merkel tree  
+Store hash values for transactions.
+Merkle Tree can be seen as a generalization of Hash List. The main difference between Merkle Tree and Hash List is that you can directly download and immediately verify a branch of Merkle Tree. Because the file can be divided into small data blocks, if a piece of data is damaged, just download the data block again. If the file is very large, Merkle tree and Hash list are both good. However, Merkle tree can download one branch at a time, and then immediately verify the branch. If the branch verification is passed, data can be downloaded. The hash list can only be verified by downloading the entire hash list.
 
 <br></br>
 <br></br>
@@ -95,13 +95,14 @@ Key characteristics: Decentralization, Tamper resistance, Anonymity, Safe and tr
 
 2. Blockchain 2.0 - Ethereum
     Ethereum=Bitcoin+Smart Contract
-    Characteristics:
-    PoW consensus mechanism
-    Average block out time 14s
-    Support smart contract
-    The change of incentive mechanism and the addition of uncle reward can further stimulate the enthusiasm of miners
-    Support various decentralized applications (DApp)
-    Programmable
+  
+    Characteristics:  
+    a. PoW consensus mechanism
+    b. Average block out time 14s
+    c. Support smart contract
+    d. The change of incentive mechanism and the addition of uncle reward can further stimulate the enthusiasm of miners
+    e. Support various decentralized applications (DApp)
+    f. Programmable
 
 <img src = 'https://s3.bmp.ovh/imgs/2022/10/05/38553debfa553855.png' >
 
