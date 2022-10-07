@@ -65,29 +65,29 @@ Key characteristics: Decentralization, Tamper resistance, Anonymity, Safe and tr
 
 ## Core technology
 1. P2P network
-The end-to-end/point-to-point network is used to broadcast and spread all kinds of messages. Nodes can be accessed at will. Any two nodes are connected (decentralized), so messages can be transmitted to each other (forming a distributed ledger), and data is difficult to tamper with.
+  The end-to-end/point-to-point network is used to broadcast and spread all kinds of messages. Nodes can be accessed at will. Any two nodes are connected (decentralized), so messages can be transmitted to each other (forming a distributed ledger), and data is difficult to tamper with.
 
 2. Asymmetric encryption algorithm
-Asymmetric encryption is mainly used in the blockchain. After hashing the transaction record or contract and other information, use the private key to encrypt to generate a digital signature and publish it to the network. Other nodes can verify whether the message has been tampered with through the public key to ensure security.
+  Asymmetric encryption is mainly used in the blockchain. After hashing the transaction record or contract and other information, use the private key to encrypt to generate a digital signature and publish it to the network. Other nodes can verify whether the message has been tampered with through the public key to ensure security.
 
 3. Consensus mechanism
-Trust can be established between unrelated nodes to reach a consensus on the consistency of the blockchain. Common consensus mechanisms include PoW, PoS, and DPoS
+  Trust can be established between unrelated nodes to reach a consensus on the consistency of the blockchain. Common consensus mechanisms include PoW, PoS, and DPoS
 
 4. Merkel tree
-Store hash values for transactions.
-Merkle Tree can be seen as a generalization of Hash List. The main difference between Merkle Tree and Hash List is that you can directly download and immediately verify a branch of Merkle Tree. Because the file can be divided into small data blocks, if a piece of data is damaged, just download the data block again. If the file is very large, Merkle tree and Hash list are both good. However, Merkle tree can download one branch at a time, and then immediately verify the branch. If the branch verification is passed, data can be downloaded. The hash list can only be verified by downloading the entire hash list.
+  Store hash values for transactions.
+  Merkle Tree can be seen as a generalization of Hash List. The main difference between Merkle Tree and Hash List is that you can directly download and immediately verify a branch of Merkle Tree. Because the file can be divided into small data blocks, if a piece of data is damaged, just download the data block again. If the file is very large, Merkle tree and Hash list are both good. However, Merkle tree can download one branch at a time, and then immediately verify the branch. If the branch verification is passed, data can be downloaded. The hash list can only be verified by downloading the entire hash list.
 
 <br></br>
 <br></br>
 
 ## Application
 1. Blockchain 1.0 - Bitcoin
-The concept of Bitcoin was put forward by Nakamoto Cong in 2008 to solve the problem of centralization and double spending, which led to the birth of a new digital currency - Bitcoin, which is the first application of blockchain technology.
-
-    Characteristics:
-    a. PoW consensus mechanism
-    b. Average block out time 10min
-    c. Only Bitcoin transfers are allowed
+  The concept of Bitcoin was put forward by Nakamoto Cong in 2008 to solve the problem of centralization and double spending, which led to the birth of a new digital currency - Bitcoin, which is the first application of blockchain technology.  
+  
+    Characteristics:  
+    a. PoW consensus mechanism  
+    b. Average block out time 10min  
+    c. Only Bitcoin transfers are allowed  
 
 <img src = 'https://s3.bmp.ovh/imgs/2022/10/05/4931438a2d7e7ddd.png' >
 
