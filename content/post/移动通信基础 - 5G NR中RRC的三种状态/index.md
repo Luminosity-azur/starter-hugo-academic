@@ -18,6 +18,8 @@ math: true
 This post is synchronously published on my CSDN blog:
 https://blog.csdn.net/weixin_45766278
 
+<br></br>
+
 ## Introduction of RRC_ INACTIVE mode
 
 Before the introduction of RRC_INACTIVE mode, LTE had only two RRC statuses: RRC_IDLE and RRC_CONNECTED. After R13, LTE RRC introduced the new mode.
@@ -36,8 +38,10 @@ In fact, similar to NB-IoT in LTE, NB-IoT belongs to the deployment of low power
 There are three reasons:
 
 - The UE will retain the context of the core network when entering the RRC_INACTIVE mode; Until there is data receiving or sending in RRC_INACTIVE mode, when it is necessary to transition to RRC_CONNETED mode, it is only necessary to carry the unique UE identifier of the core network for recovery through the recovery process, and the gNB can receive and send data packets after receiving the connection recovery.
+<br></br>
 
 - Compared with the previous RRC_IDLE mode transition to RRC_CONNETED mode directly (the context applied by the core network needs to be released, and the signaling interaction with the core network side is required when applying for the context), the above process can be omitted when the RRC_INACTIVE mode transitions to RRC_CONNETED mode.
+<br></br>
 
 - When UE receives signaling messages from gNB, it needs to blind check PDCCH to know the resource location of signaling. When the RRC_INACTIVE mode transitions to the RRC_CONNETED mode, the UE does not release the context, and the core network side does not need to re allocate the context, so the signaling reception is reduced. This will reduce the energy consumption caused by UE blind detection and the transmission time caused by air port transmission.
 
@@ -46,10 +50,10 @@ There are three reasons:
 
 
 
-## The difference and interpretation of the three modes
+## Differences and explanations of the three models
 
 - ACTIVE (CONNECTED):     UE --- NG-RAN :connected    NG-RAN --- 5GC :connected
-- IDLE:                   UE --- NG-RAN :released     NG-RAN --- 5GC :released
+- IDLE:                   UE --- NG-RAN :released     NG-RAN --- 5GC :released
 - INACTIVE:               UE --- NG-RAN :suspend      NG-RAN --- 5GC :connected
 
 <br></br>
