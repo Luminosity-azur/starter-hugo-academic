@@ -81,7 +81,7 @@ Merkle Tree can be seen as a generalization of Hash List. The main difference be
 <br></br>
 
 ## Application
-1. Blockchain 1.0 - Bitcoin
+1. Blockchain 1.0 - Bitcoin  
   The concept of Bitcoin was put forward by Nakamoto Cong in 2008 to solve the problem of centralization and double spending, which led to the birth of a new digital currency - Bitcoin, which is the first application of blockchain technology.  
   
     Characteristics:  
@@ -93,16 +93,16 @@ Merkle Tree can be seen as a generalization of Hash List. The main difference be
 
 <br></br>
 
-2. Blockchain 2.0 - Ethereum
-    Ethereum=Bitcoin+Smart Contract
+2. Blockchain 2.0 - Ethereum  
+    Ethereum=Bitcoin+Smart Contract  
   
     Characteristics:  
-    a. PoW consensus mechanism
-    b. Average block out time 14s
-    c. Support smart contract
-    d. The change of incentive mechanism and the addition of uncle reward can further stimulate the enthusiasm of miners
-    e. Support various decentralized applications (DApp)
-    f. Programmable
+    a. PoW consensus mechanism  
+    b. Average block out time 14s  
+    c. Support smart contract  
+    d. The change of incentive mechanism and the addition of uncle reward can further stimulate the enthusiasm of miners  
+    e. Support various decentralized applications (DApp)  
+    f. Programmable  
 
 <img src = 'https://s3.bmp.ovh/imgs/2022/10/05/38553debfa553855.png' >
 
