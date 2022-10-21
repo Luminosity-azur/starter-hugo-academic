@@ -79,7 +79,7 @@ email: ''
 highlight_name: true
 ---
 
-Yitao Li is a member of the radio wave propagation and access technology team of the Key Lab of Mobile Communication Technology of Chongqing University of Posts and Telecommunications. He participated in channel sounding and data processing of indoor millimeter-wave communication, which was funded by European Council H2020 and National Key R&D Project of China. Recently, he is studying algorithms related to the node location of wireless sensor networks in the Internet of Things and applying them to build a wireless body area network.
+Yitao Li is a member of the radio wave propagation and access technology team of the Key Lab of Mobile Communication Technology of Chongqing University of Posts and Telecommunications. He participated in channel sounding and data processing of indoor millimeter-wave communication, which was funded by European Council H2020 and National Key R&D Project of China. Recently, he is studying algorithms related to the node location of wireless sensor networks in the Internet of Things and applying them to optimize the wireless body area network.
 
 <!-- In addition, he served as the student representative for CQUPT and Brunel, providing advice on teaching activities. -->
 
