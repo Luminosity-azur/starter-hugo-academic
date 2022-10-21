@@ -22,8 +22,9 @@ bio: Accelerate the world's transition to the Internet of Everything.
 # Interests to show in About widget
 interests:
   - Millimeter Wave Communication
+  - Swarm Intelligence Algorithm
   - Wireless Body Area Network
-  - Artificial Intelligence
+  - Blockchain Technology
 
 
 # Education to show in About widget
