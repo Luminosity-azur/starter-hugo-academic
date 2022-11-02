@@ -23,7 +23,7 @@ feature:
   - description:
     icon: headphones
     icon_pack: fas
-    name: Orchestral music
+    name: Symphony
   - description:
     icon: microphone
     icon_pack: fas
