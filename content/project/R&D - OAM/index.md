@@ -86,6 +86,6 @@ The following is the simulation part. First, the analysis of the simulation resu
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/20/f6941e36ac8b729a.png' >
 <img src = 'https://s3.bmp.ovh/imgs/2022/08/20/0401cda972003aad.png' >
 
-## Recommended reading references
+## References
 [1] Liao Xi, Zhou Chenhong, Wang Yang, Liao Shasha, Zhou Jihua, Zhang Jie. Research progress of key technologies of orbital angular momentum for wireless communication [J].*Electron and Informatics*,2020,42(7):1666-1677.
 [2]ChenR,ZhouH,MorettiM,WangXD,andLiJD.Orbitalangularmomentumwaves:Generation,detection,andemergingapplications[J].*IEEE Communications Surveys and Tutorials*,2019,22(2):840-868.
