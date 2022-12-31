@@ -25,7 +25,8 @@ doi: ''
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2022 IEEE 4th International Conference on Civil Aviation Safety and Information Technology (ICCASIT), 2022, pp. 971-974, doi: 10.1109/ICCASIT55263.2022.9987242*
+publication: In *2022 IEEE 4th International Conference on Civil Aviation Safety and Information Technology (ICCASIT), 2022, pp. 971-974, doi 10.1109/ICCASIT55263.2022.9987242*
+# In *2022 IEEE 4th International Conference on Civil Aviation Safety and Information Technology (ICCASIT), 2022, pp. 971-974, doi: 10.1109/ICCASIT55263.2022.9987242*
 # publication_short: In *ICCASIT 2022*
 
 
